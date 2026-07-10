@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root {
+    --color-one: #224229;
+    --color-two: #018342;
+
+    --color-text: #607765;
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Manrope", sans-serif;
+}
+
+body {
+    color: var(--color-text);
+    line-height: 1.6;
+    font-family: var(--font-body);
+    margin: 0;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
+a {
+    color: var(--color-one);
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+a:hover {
+    text-decoration: none ;
+    color: var(--color-one);
+}
+
+
+
+/* Button  */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 45px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+.button:hover {
+    background: #D2D5D2;
+    color: #000;
+}
+.button-one {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.button-one:hover {
+    background: #fff;
+    color: var(--color-one);
+}
+.button-add-cart {
+    width: 90%;
+    text-align: center;
+    color: #224229;
+    border: 1px solid var(--color-one);
+}
+.button-add-cart:hover {
+    background: #F8F1E3;
+}
+/* Box Head  */
+.box-head .pre-title {
+    color: var(--color-two);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.box-head .inner-title {
+    font-size: 60px;
+    color: var(--color-one);
+    margin-bottom: 20px;
+}
+.box-head .inner-desc {
+    font-weight: 500;
+}
+/* Button  */
