@@ -57,8 +57,44 @@
         font-size: 25px;
     }
 
+    /* Ẩn menu mặc định */
     .header .inner-wrap .inner-menu {
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background: white;
+
+        /* Ẩn */
+        opacity: 0;
+        visibility: hidden;
+
+        /* Đẩy menu lên trên một chút */
+        transform: translateY(-20px);
+
+        /* Animation */
+        transition: all 0.3s ease;
+    }
+
+    /* Menu khi mở */
+    .header .inner-wrap .inner-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .header .inner-wrap .inner-menu ul {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    .header .inner-wrap .inner-menu ul li {
+        margin-bottom: 20px;
+    }
+
+    .header .inner-wrap .inner-menu ul li:last-child {
+        margin-bottom: 0;
     }
 
     .header .inner-wrap .inner-icon ul li:nth-child(1),
@@ -141,7 +177,6 @@
 @media (max-width: 991.98px) {
     .section-one .inner-content .inner-title {
         font-size: 80px;
-
     }
 
     .section-one .inner-content .inner-desc {

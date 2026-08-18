@@ -12,4 +12,13 @@ add_cart.forEach(function (item) {
     num_cart.textContent = count;
     num_cart.classList.add("active");
   });
-});
+}); 
+
+const menuToggle = document.querySelector("#menu-toggle");
+const menu = document.querySelector(".inner-menu");
+
+menuToggle.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  menu.classList.toggle("active");
+})
